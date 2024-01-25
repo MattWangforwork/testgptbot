@@ -1,1 +1,14 @@
-{"key": "value", "another_key": "another_value"}
+{
+    "builds": [
+      {
+        "src": "index_chat.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "index_chat.py"
+      }
+    ]
+  }
